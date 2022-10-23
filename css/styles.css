@@ -168,10 +168,14 @@ html {
   color: #2196f3;
 }
 
-.auth-nav {
+.auth-contacts {
   display: flex;
+}
+.auth-nav {
+  display: block;
   align-items: center;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .auth-link {
@@ -194,7 +198,13 @@ html {
   margin-left: 50px;
 }
 
+.auth-symbol:hover,
+.auth-symbol:focus {
+  color: #2196f3;
+}
+
 /* ----------------Hero---------------- */
+
 .hero-list {
   display: flex;
   gap: 30px;
@@ -219,8 +229,14 @@ html {
 
 .hero {
   background: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg-hero.jpg);
   text-align: center;
   padding: 200px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
 }
 
 .btn {
@@ -264,11 +280,26 @@ html {
   text-align: center;
   color: var(--main-title-color);
 }
+/* ----------------Переваги---------------- */
 
 .benefits {
   margin-bottom: 0px;
   margin-top: 0;
   padding: 94px 0;
+}
+
+.benefits-block {
+  display: block;
+  content: '';
+  height: 120px;
+  width: calc((1200px - 150px) / 4);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .benefits-title {
@@ -288,6 +319,10 @@ html {
   line-height: 1.71;
   width: 270px;
 }
+.benefits-icon {
+  max-width: ;
+}
+
 /* ------------- Опис послуг--------------- */
 .work {
   padding: 94px 0;
@@ -335,6 +370,41 @@ html {
   margin-top: 10px;
 }
 
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.team-soc-item {
+  width: 44px;
+  height: 44px;
+}
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--main-link-color);
+}
+
+.team-soc-icon {
+  fill: #afb1b8;
+}
+
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+  fill: #ffffff;
+}
+
 .team-person {
   background: #ffffff;
   /* material shadow v1 */
@@ -342,6 +412,41 @@ html {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+/* ----------------Постійні клієнти---------------- */
+.clients {
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients-item {
+  width: calc((1200px - 180px) / 6);
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 5px;
+}
+.clients-link {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  fill: #afb1b8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-item:hover {
+  border-color: var(--main-link-color);
+}
+
+.clients-link:hover .clients-logo {
+  fill: var(--main-link-color);
 }
 
 /* ----------------Портфоліо---------------- */
@@ -409,11 +514,18 @@ html {
   padding: 60px 0;
 }
 
+.footer-div {
+}
 .conteiner-div {
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
   width: 1200px;
+  display: flex;
+}
+
+.conteiner-logo {
+  margin-right: 70px;
 }
 
 .footer-link {
@@ -432,6 +544,15 @@ html {
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 /* ----------------Портфоліо---------------- */
 
